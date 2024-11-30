@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web-Portofolio</title>
+    <title>Biography</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.min.css" rel="stylesheet" type="text/css" />
     <link src="src/output.css" rel="stylesheet"></link>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <script src="blob.js"></script>
     <style>
@@ -41,7 +41,6 @@
                     <li><a href="#about" class="rounded-lg hover:bg-red-800 hover:text-white transition-all duration-300 active:bg-red-900">About</a></li>
                     <li><a href="#hobbies" class="rounded-lg hover:bg-red-800 hover:text-white transition-all duration-300 active:bg-red-900">Hobbies</a></li>
                     <li><a href="#skills" class="rounded-lg hover:bg-red-800 hover:text-white transition-all duration-300 active:bg-red-900">Skills</a></li>
-                    <li><a href="#contact" class="rounded-lg hover:bg-red-800 hover:text-white transition-all duration-300 active:bg-red-900">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -82,12 +81,6 @@
                         Skills
                     </a>
                 </li>
-                <li>
-                    <a href="#contact" class="flex items-center p-3 text-lg rounded-lg hover:bg-red-50 hover:text-red-800 hover:translate-x-2 transition-all duration-300 active:bg-red-100">
-                        <img src="./assets/phone-call.png" alt="" class="w-5 h-5 mr-3">
-                        Contact
-                    </a>
-                </li>
             </ul>
         </div>
     </div>
@@ -95,13 +88,13 @@
 
     <!-- Hero -->
     <section class="hero min-h-screen pt-36 pb-32 sm-py-20" id="hero">
-        <div class="hero-content flex-col lg:flex-row-reverse gap-6 lg:gap-12 px-4 sm:px-6 lg:px-8">
-            <div data-aos="fade-left" class="relative w-[min(350px,90vw)] h-[min(350px,90vw)] mx-auto">
+        <div class="hero-content flex-col lg:flex-row-reverse gap-6 lg:gap-12 px-4 sm:px-6 lg:px-8" data-aos="fade-up">
+            <div data-aos="zoom-in" class="relative w-[min(350px,90vw)] h-[min(350px,90vw)] mx-auto">
                 <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[min(320px,85vw)] h-[min(320px,85vw)] bg-red-800 animate-blob transition-all duration-300 hover:bg-red-900"></div>
-                <img src="assets/me.png" alt="Profile" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[min(300px,80vw)] h-[min(300px,80vw)] object-cover z-10 transition-transform duration-300 hover:scale-105" />
+                <img src="assets/me.png" alt="Profile" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[min(300px,80vw)] h-[min(300px,80vw)] object-cover z-10 transition-transform duration-300 hover:scale-105"/>
             </div>
             <div data-aos="fade-right" class="max-w-xl text-start lg:text-left">
-                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold">Welcome To My <span class="text-red-800">Web-Portfolio</span></h1>
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold">Welcome To My Web<span class="text-red-800"> Biography</span></h1>
                 <p class="py-4 sm:py-6 text-lg sm:text-xl"><span class="font-bold text-red-800">Halo👋</span> Semuanya</p>
                 <button class="btn btn-primary bg-red-800 hover:bg-red-900 border-none"><a href="#about">Get Started</a></button>
             </div>
@@ -112,16 +105,16 @@
     <section class="pt-36 pb-32 sm:py-20 bg-base-200" id="about">
         <div class="container mx-auto px-4 flex sm:px-6 lg:px-8">
             <div class="max-w-4xl mx-auto">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8" data-aos="fade-up" data-aos-delay="100">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8" data-aos="fade-up" >
                     <!-- Kolom Tentang Saya -->
-                    <div>
+                    <div data-aos="zoom-in">
                         <h2 class="text-3xl sm:text-4xl font-bold text-red-800 mb-4 sm:mb-6">Tentang Saya</h2>
                         <p class="text-lg sm:text-xl mb-6  font-medium leading-relaxed text-justify">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptates repellendus amet, culpa, veritatis distinctio adipisci explicabo sit incidunt nisi nemo dolore nobis aliquid similique quia quibusdam porro quo suscipit.
                         </p>
                     </div>
                     <!-- Kolom Mari Berteman -->
-                    <div>
+                    <div data-aos="zoom-in">
                         <h2 class="text-3xl sm:text-4xl font-bold text-red-800 mb-4 sm:mb-6">Mari Berteman</h2>
                         <p class="text-lg sm:text-xl mb-6 font-medium leading-relaxed text-justify">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor minima illo ullam cum, eligendi excepturi, neque praesentium voluptatibus consequuntur adipisci rem nemo architecto hic aspernatur suscipit ut sapiente nisi alias autem itaque repellendus? Nobis possimus, necessitatibus in consectetur error praesentium.
@@ -147,7 +140,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- Hobbies -->
     <section id="hobbies" class="pt-20 pb-16">
@@ -197,7 +189,7 @@
     <!-- Skills -->
     <section id="skills" class="pt-36 pb-32 sm:py-20 bg-transparent">
         <div class="container mx-auto">
-            <div data-aos="fade-up">
+            <div data-aos="fade-right">
                 <div class="w-full px-8">
                     <div class="max-w-xl mx-auto text-center mb-16">
                         <h4 class="font-semibold text-lg text-red-800">Skills</h4>
@@ -207,17 +199,18 @@
 
                 <div class="flex flex-wrap justify-center gap-10 px-4">
                     <!-- HTML Skill -->
-                    <div class="skill-item group">
+                    <div class="skill-item group" data-aos="flip-right">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" 
-                            class="w-24 h-24 mb-2 transition-all duration-300 group-hover:-translate-y-2" 
+                            class="w-24 h-24 mb-2 transition-all duration-300 group-hover:-translate-y-2"  
                             alt="HTML5"/>
+                            </>
                         <div class="text-center">
                             <h3 class="text-xl font-bold mb-1">HTML</h3>
                         </div>
                     </div>
 
                     <!-- CSS Skill -->
-                    <div class="skill-item group">
+                    <div class="skill-item group" data-aos="flip-right">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" 
                             class="w-24 h-24 mb-2 transition-all duration-300 group-hover:-translate-y-2" 
                             alt="CSS3"/>
@@ -227,7 +220,7 @@
                     </div>
 
                     <!-- JavaScript Skill -->
-                    <div class="skill-item group">
+                    <div class="skill-item group" data-aos="flip-right">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" 
                             class="w-24 h-24 mb-2 transition-all duration-300 group-hover:-translate-y-2" 
                             alt="JavaScript"/>
@@ -237,7 +230,7 @@
                     </div>
 
                     <!-- React Skill -->
-                    <div class="skill-item group">
+                    <div class="skill-item group"  data-aos="flip-right">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" 
                             class="w-24 h-24 mb-2 transition-all duration-300 group-hover:-translate-y-2" 
                             alt="React"/>
@@ -247,7 +240,7 @@
                     </div>
 
                     <!-- Tailwind Skill -->
-                    <div class="skill-item group">
+                    <div class="skill-item group" data-aos="flip-right">
                         <svg viewBox="0 0 32 32" class="w-24 h-24 mb-2 transition-all duration-300 group-hover:-translate-y-2">
                             <path
                                 fill="#44a8b3"
@@ -259,37 +252,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="py-16 sm:py-200">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div data-aos="fade-up">
-                <h4 class="font-semibold text-lg text-red-800 text-center">Contact</h4>
-                <h2 class="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12">Hubungi Saya</h2>
-                <form class="max-w-lg mx-auto space-y-4">
-                    <div class="form-control w-full">
-                        <label class="label">
-                            <span class="label-text">Nama Anda</span>
-                        </label>
-                        <input type="text" placeholder="Masukkan nama" class="input input-bordered w-full" />
-                    </div>
-                    <div class="form-control w-full">
-                        <label class="label">
-                            <span class="label-text">Email Anda</span>
-                        </label>
-                        <input type="email" placeholder="Masukkan email" class="input input-bordered w-full"/>
-                    </div>
-                    <div class="form-control w-full">
-                        <label class="label">
-                            <span class="label-text">Pesan Anda</span>
-                        </label>
-                        <textarea class="textarea textarea-bordered h-24 sm:h-32" placeholder="Masukkan pesan"></textarea>
-                    </div>
-                    <button class="btn btn-block bg-red-800 text-white hover:bg-red-900 border-none mt-6">Kirim Pesan</button>
-                </form>
             </div>
         </div>
     </section>
@@ -334,29 +296,22 @@
                         <h3 class="font-bold text-xl mb-4">Navigation</h3>
                         <ul>
                             <li class="mb-2">
-                                <a href="#hero" class="transition-all duration-300 ease-in-out hover:text-red-600 hover:translate-x-1">
-                                    Home
-                                </a>
+                                <a href="#hero" class="group relative hover:text-red-600 transition">Home
+                                <span class="absolute left-0 bottom-[-5px] w-0 h-1 bg-red-600 transition-all duration-300 group-hover:w-full"></span>
+                            </a>
+
                             </li>
                             <li class="mb-2">
-                                <a href="#about" class="transition-all duration-300 ease-in-out hover:text-red-600 hover:translate-x-1">
-                                    About
-                                </a>
+                                <a href="#about" class="group relative hover:text-red-600 transition">About
+                                <span class="absolute left-0 bottom-[-5px] w-0 h-1 bg-red-600 transition-all duration-300 group-hover:w-full"></span>
                             </li>
                             <li class="mb-2">
-                                <a href="#hobbies" class="transition-all duration-300 ease-in-out hover:text-red-600 hover:translate-x-1">
-                                    Hobbies
-                                </a>
+                                <a href="#hobbies" class="group relative hover:text-red-600 transition">Hobbies
+                                <span class="absolute left-0 bottom-[-5px] w-0 h-1 bg-red-600 transition-all duration-300 group-hover:w-full"></span>
                             </li>
                             <li class="mb-2">
-                                <a href="#skills" class="transition-all duration-300 ease-in-out hover:text-red-600 hover:translate-x-1">
-                                    Skills
-                                </a>
-                            </li>
-                            <li class="mb-2">
-                                <a href="#contact" class="transition-all duration-300 ease-in-out hover:text-red-600 hover:translate-x-1">
-                                    Contact
-                                </a>
+                                <a href="#skills" class="group relative hover:text-red-600 transition">Skills
+                                <span class="absolute left-0 bottom-[-5px] w-0 h-1 bg-red-600 transition-all duration-300 group-hover:w-full"></span>
                             </li>
                         </ul>
                     </div>
@@ -385,12 +340,14 @@
 
     <!-- Scripts -->
     <script src="script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
             duration: 1000,
-            once: true,
-            disable: window.innerWidth < 640
+            once: false,
+            disable: window.innerWidth < 640,
+            offset: 200,
+            mirror: true,
         });
     </script>
 </body>
